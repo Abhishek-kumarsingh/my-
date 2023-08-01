@@ -1,17 +1,32 @@
 export default function About(){
-    return 
-    <div className="item-center">
-        <fieldset className=" bg-slate-50p-2xl h-2xl w-2xl">
-  <legend>Published status</legend>
+    return (
+    <section className="w-screen mt-12">
+        <div className="flex felx-1 justify-start items-center flex-col gap-6">
+            <h5 className="font-bol text-4xl">Activities</h5>
+            <p className="text-2xl uppercase font-light">
+                College of engineering
+            </p>
+            <p 
+            className="w-3/5 text-center text-2xl font-cursive">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ut iste id ipsa, velit fugit sequi consequatur incidunt, officiis, nobis amet quae! Accusantium quis accusamus, ducimus illo expedita id assumenda.
+            </p>
+            <div className=" flex xs:flex-col md:flex-row justify-center items-center gap-6">
+        <img className=" md:w-1/4 xs:w-3/4 h-auto shadow-lg hover:shadow-2xl"
+        src ="https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg"
+        class="max-w-xs transition duration-300 ease-in-out hover:scale-125" alt="img1"/>
 
-  <input  id="draft" className="peer/draft" type="radio" name="status" checked />
-  <label for="draft" className="peer-checked/draft:text-sky-500">Draft</label>
+        <img className="md:w-1/4 xs:w-3/4 h-auto shadow-lg hover:shadow-2xl"
+        src ="https://cdn.pixabay.com/photo/2017/07/15/22/07/library-2507902_1280.jpg "
+        class="max-w-xs transition duration-300 ease-in-out hover:scale-125" alt="img2"/>
 
-  <input id="published" className="peer/published" type="radio" name="status" />
-  <label for="published" className="peer-checked/published:text-sky-500">Published</label>
-
-  <div className="hidden peer-checked/draft:block">Drafts are only visible to administrators.</div>
-  <div className="hidden peer-checked/published:block">Your post will be publicly visible on your site.</div>
-</fieldset>
-    </div>
+        <img className="md:w-1/4 xs:w-3/4 h-auto shadow-lg hover:shadow-2xl"
+        src="https://cdn.pixabay.com/photo/2018/06/27/07/45/college-student-3500990_1280.jpg"
+        class="max-w-xs transition duration-300 ease-in-out hover:scale-125" alt="img3"/>
+            </div>
+            <button className="border-red-300 border-2 p-3 rounded md hover:bg-red-500">
+                View More
+            </button>
+        </div>
+    </section>
+    );
 }

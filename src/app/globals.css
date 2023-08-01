@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+@layer base{
+  body{
+    font-family:'Courier New', Courier, monospace
+  }
+  h5{
+    text-shadow:0cqb
+  }
+}
+@layer utilities{
+  .font-cursive{
+    font-family:cursive;
+  }
+}
